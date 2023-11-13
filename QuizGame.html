@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="startContainer">
+        <h1>Welcome To Quiz Game</h1>
+        <button type="button" class="btn btn-primary btn-lg" onclick="startQuiz()">Start The Java Quiz</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="startPythonQuiz()">Start The Python Quiz</button>
+    </div>
+
+    <!-- Java MCQ Questions start -->
+    <div class="container question-container question-container1">
+        <h2>Question 1:</h2>
+        <p>What is Truncation in Java?</p>
+
+        <div class="options options1">
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer1" id="option1">
+                <label for="option1">Floating-point value assigned to a Floating type</label>
+            </div>
+            <div class="option" data-correct="true">
+                <input type="radio" name="answer1" id="option2">
+                <label for="option2">Floating-point value assigned to an integer type</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer1" id="option3">
+                <label for="option3">Integer value assigned to double type</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer1" id="option4">
+                <label for="option4">Integer value assigned to floating type</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success btn-lg" onclick="checkAnswer(1)">Next Question</button>
+    </div>
+
+    <div class="container question-container question-container2">
+        <h2>Question 2:</h2>
+        <p>Which of the following is not a Java features?</p>
+
+        <div class="options options2">
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer2" id="option5">
+                <label for="option5">Dynamic</label>
+            </div>
+            <div class="option" data-correct="true">
+                <input type="radio" name="answer2" id="option6">
+                <label for="option6">Use of pointers</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer2" id="option7">
+                <label for="option7">Architecture Neutral</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer2" id="option8">
+                <label for="option8">Object-oriented</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success btn-lg" onclick="checkAnswer(2)">Next Question</button>
+    </div>
+
+    <div class="container question-container question-container3">
+        <h2>Question 3:</h2>
+        <p>Which of these keywords are used for the block to be examined for exceptions?</p>
+
+        <div class="options options3">
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer3" id="option9">
+                <label for="option9">check</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer3" id="option10">
+                <label for="option10">throw</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer3" id="option11">
+                <label for="option11">catch</label>
+            </div>
+            <div class="option" data-correct="true">
+                <input type="radio" name="answer3" id="option12">
+                <label for="option12">try</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success btn-lg" onclick="checkAnswer(3)">Next Question</button>
+    </div>
+
+    <div class="container question-container question-container4">
+        <h2>Question 4:</h2>
+        <p>Which one of the following is not an access modifier?</p>
+
+        <div class="options options4">
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer4" id="option13">
+                <label for="option13">Protected</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer4" id="option14">
+                <label for="option14">Public</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer4" id="option15">
+                <label for="option15">Private</label>
+            </div>
+            <div class="option" data-correct="true">
+                <input type="radio" name="answer4" id="option16">
+                <label for="option16">Void</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success btn-lg" onclick="showResult()">Finish Quiz</button>
+    </div>
+
+    <div class="container" id="resultContainer">
+        <h2>Your Score: <span id="score"></span></h2>
+        <button type="button" class="btn btn-primary btn-lg" onclick="reviewQuestions()">Review Your Questions</button>
+    </div>
+    <!-- Java MCQS END -->
+
+    <!-- Python Quiz Questions Start -->
+    <!-- <div class="container" id="startContainer">
+        <h1>Welcome To Quiz Game</h1>
+        <button type="button" class="btn btn-primary btn-lg" onclick="startPythonQuiz()">Start The Python Quiz</button> 
+    </div> -->
+
+    <!-- Python Quiz Questions Start -->
+    <div class="container question-container question-container5">
+        <h2>Question 1:</h2>
+        <p>What is the main purpose of using the "if" statement in Python?</p>
+        <div class="options options5">
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer5" id="option17">
+                <label for="option17">Declare a variable</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer5" id="option18">
+                <label for="option18">Loop through a sequence</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer5" id="option19">
+                <label for="option19">Define a function</label>
+            </div>
+            <div class="option" data-correct="true">
+                <input type="radio" name="answer5" id="option20">
+                <label for="option20">Make decisions based on conditions</label>
+            </div>
+        </div>
+        <button type="button" class="btn btn-success btn-lg" onclick="checkPythonAnswer(5)">Next Question</button>
+    </div>
+
+    <!-- Repeat similar structure for Questions 6-8 -->
+    <div class="container question-container question-container6">
+        <h2>Question 2:</h2>
+        <p>What is the correct way to comment multiple lines in Python?</p>
+
+        <div class="options options6">
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer6" id="option21">
+                <label for="option21">/* This is a comment */</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer6" id="option22">
+                <label for="option22">// This is a comment</label>
+            </div>
+            <div class="option" data-correct="true">
+                <input type="radio" name="answer6" id="option23">
+                <label for="option23">''' This is a comment '''</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer6" id="option24">
+                <label for="option24"># This is a comment</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success btn-lg" onclick="checkPythonAnswer(6)">Next Question</button>
+    </div>
+
+    <div class="container question-container question-container7">
+        <h2>Question 3:</h2>
+        <p>Which of the following is the correct way to round a number to two decimal places in Python?</p>
+
+        <div class="options options7">
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer7" id="option25">
+                <label for="option25">round(number, 2)</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer7" id="option26">
+                <label for="option26">Math.round(number, 2)</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer7" id="option27">
+                <label for="option27">Math.roundToDecimal(number, 2)</label>
+            </div>
+            <div class="option" data-correct="true">
+                <input type="radio" name="answer7" id="option28">
+                <label for="option28">round(number, ndigits=2)</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success btn-lg" onclick="checkPythonAnswer(7)">Next Question</button>
+    </div>
+
+    <div class="container question-container question-container8">
+        <h2>Question 4:</h2>
+        <p>What is the output of the following code snippet?</p>
+        <pre>
+            <code>
+                x = 5
+                y = 2
+                print(x ** y)
+            </code>
+        </pre>
+
+        <div class="options options8">
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer8" id="option29">
+                <label for="option29">10</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer8" id="option30">
+                <label for="option30">25</label>
+            </div>
+            <div class="option" data-correct="true">
+                <input type="radio" name="answer8" id="option31">
+                <label for="option31">30</label>
+            </div>
+            <div class="option" data-correct="false">
+                <input type="radio" name="answer8" id="option32">
+                <label for="option32">32</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success btn-lg" onclick="showPythonResult()">Finish Quiz</button>
+    </div>
+
+    <div class="container" id="resultContainer1">
+        <h2>Your Score: <span id="score"></span></h2>
+        <button type="button" class="btn btn-primary btn-lg" onclick="reviewPythonQuestions()">Review Your
+            Questions</button>
+    </div>
+
+</body>
+
+
+</html>
